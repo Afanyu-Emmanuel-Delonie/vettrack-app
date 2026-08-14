@@ -54,7 +54,7 @@ export default function WhyUs() {
               The farm management platform built to last
             </h2>
             <p className="max-w-sm text-sm leading-6 text-ink-400">
-              We didn't just build another dashboard. We built a system that works the way farmers actually work.
+              We didn&apos;t just build another dashboard. We built a system that works the way farmers actually work.
             </p>
           </div>
         </div>

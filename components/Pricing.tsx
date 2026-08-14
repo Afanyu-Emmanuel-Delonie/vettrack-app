@@ -66,10 +66,10 @@ export default function Pricing() {
   return (
     <div>
       {/* Hero header */}
-      <div ref={headingRef} className="bg-white px-6 py-20 text-center">
+      <div ref={headingRef} className="bg-white px-6 py-20 text-center" id="pricing">
         <p className="text-xs font-semibold uppercase tracking-widest text-ink-400">Pricing</p>
         <h1 className="mx-auto mt-3 max-w-xl font-display text-4xl font-semibold tracking-tight text-ink-900 sm:text-5xl">
-          Invest in your farm's future
+          Invest in your farm&apos;s future
         </h1>
         <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-ink-500">
           Transparent pricing, no contracts, no surprise fees. Scale up or down as your farm grows.

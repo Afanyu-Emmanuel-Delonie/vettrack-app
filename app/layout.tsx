@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
@@ -32,9 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <SmoothScroll />
-        <Nav />
-        <main className="flex flex-1 flex-col pt-16">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

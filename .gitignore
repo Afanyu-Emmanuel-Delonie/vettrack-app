@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# editor local history (VSCode Local History extension)
+.history
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

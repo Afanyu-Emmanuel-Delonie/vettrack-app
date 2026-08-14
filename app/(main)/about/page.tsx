@@ -29,30 +29,25 @@ export default function AboutPage() {
               </span>
             </div>
 
-            <p className="mt-4 text-lg leading-8 text-ink-600">
-              Founded in 2020, VetTrack has been at the forefront of veterinary innovation in
-              Rwanda. Our journey began with a simple vision: to revolutionize animal health
-              management through technology and expert care.
+            <p className="mt-4 text-xl leading-9 text-ink-600">
+              Founded in 2020, VetTrack set out to revolutionize animal health management in
+              Rwanda through technology and expert care.
             </p>
-            <p className="mt-4 text-lg leading-8 text-ink-600">
-              Over the years, we&apos;ve grown from a small local clinic to a comprehensive animal
-              health service provider, thanks to our commitment to excellence and our passionate
-              team of skilled veterinarians and technologists.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-ink-600">
-              Today, we partner with licensed veterinarians to offer video consultations, and with
-              clinics for in-person services like vaccinations and diagnostics — all logged back
-              to your animal&apos;s record automatically.
+            <p className="mt-4 text-xl leading-9 text-ink-600">
+              We&apos;ve grown from a small local clinic into a comprehensive animal health
+              platform — partnering with licensed veterinarians for video consultations, and with
+              clinics for vaccinations and diagnostics, all logged straight to your animal&apos;s
+              record.
             </p>
           </div>
 
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-ink-100">
+          <div className="relative aspect-square w-full">
             <Image
-              src="/img/heros-img.jpg"
-              alt="A vet checking on cattle in a barn"
+              src="/img/team/vet-story.png"
+              alt="A member of the VetTrack team"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover"
+              className="object-contain rounded-[2.5rem]"
             />
           </div>
         </div>
