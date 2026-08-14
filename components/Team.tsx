@@ -20,7 +20,7 @@ const team = [
   },
   {
     name: "Dr. Gerard Sano",
-    role: "Co-founder & Chief Financial Officer",
+    role: "Chief Financial Officer",
     photo: "/img/team/finance.png",
     email: "finance@vettrack.rw",
     whatsapp: "https://wa.me/250700000003",
@@ -28,20 +28,20 @@ const team = [
   },
   {
     name: "Dr. Charline Rutagengwa",
-    role: "Co-founder & Marketing Officer",
+    role: "Marketing Officer",
     photo: "/img/team/marketing.png",
     email: "marketing@vettrack.rw",
     whatsapp: "https://wa.me/250700000004",
     instagram: "https://instagram.com/vettrack",
   },
-  {
-    name: "Dr. Mentor Name",
-    role: "Mentor",
-    photo: "/img/team/mentor.png",
-    email: "mentor@vettrack.rw",
-    whatsapp: "https://wa.me/250700000005",
-    instagram: "https://instagram.com/vettrack",
-  },
+  // {
+  //   name: "Dr. Mentor Name",
+  //   role: "Mentor",
+  //   photo: "/img/team/mentor.png",
+  //   email: "mentor@vettrack.rw",
+  //   whatsapp: "https://wa.me/250700000005",
+  //   instagram: "https://instagram.com/vettrack",
+  // },
 ] as const;
 
 export default function Team() {
@@ -54,7 +54,7 @@ export default function Team() {
         The people building VetTrack day to day.
       </p>
 
-      <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-5">
+      <div className="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-4">
         {team.map((member) => (
           <div
             key={member.role}
