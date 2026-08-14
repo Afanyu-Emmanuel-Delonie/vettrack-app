@@ -14,8 +14,8 @@ export default function MentoredBy() {
         <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,280px)_1fr] lg:items-center lg:gap-16">
           <div className="relative aspect-[4/5] w-full max-w-xs overflow-hidden rounded-3xl bg-ink-800">
             <Image
-              src="/img/vets/vet-1.png"
-              alt="Dr. Jean Bosco Nsengimana"
+              src="/img/team/mentor.png"
+              alt="Dr. Richard Gashururu"
               fill
               sizes="(min-width: 1024px) 280px, 60vw"
               className="object-cover"
@@ -24,15 +24,15 @@ export default function MentoredBy() {
 
           <div>
             <p className="font-display text-2xl leading-snug text-ink-900 sm:text-3xl">
-              &ldquo;Every feature we ship has to survive contact with a real animal, on a real
-              farm, before it ever reaches a customer.&rdquo;
+              &ldquo;Good animal health starts with sound science and mentorship that never
+              stops.&rdquo;
             </p>
-            <h3 className="mt-6 text-lg font-semibold text-ink-900">Dr. Jean Bosco Nsengimana</h3>
-            <p className="text-sm font-medium text-brand-400">DVM, Senior Veterinary Advisor</p>
+            <h3 className="mt-6 text-lg font-semibold text-ink-900">Dr. Richard Gashururu</h3>
+            <p className="text-sm font-medium text-brand-400">PhD, Mentor</p>
             <p className="mt-3 max-w-xl text-sm leading-6 text-ink-500">
-              With over 20 years treating livestock across East Africa, Dr. Nsengimana mentors our
-              veterinary team and reviews every clinical feature before it ships — from disease
-              alerts to consultation workflows.
+              Dr. Gashururu brings his academic and veterinary expertise to guide our team&apos;s
+              approach to animal health innovation, helping ensure our work stays grounded in
+              sound science.
             </p>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative -mt-16 flex h-svh min-h-[560px] max-h-[95vh] lg:max-h-[85vh] xl:max-h-[75vh] w-full items-center overflow-hidden">
+    <section className="relative -mt-16 flex h-svh min-h-[680px] w-full items-center overflow-hidden">
       <div ref={imageRef} className="absolute inset-0">
         <Image
           src="/img/hero-img.png"

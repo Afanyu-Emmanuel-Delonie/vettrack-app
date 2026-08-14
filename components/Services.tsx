@@ -46,7 +46,7 @@ export default function Services() {
   const gridRef = useScrollReveal({ animation: "stagger" });
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-20">
+    <section id="services" className="mx-auto w-full max-w-6xl px-6 py-20">
       <div ref={headingRef} className="mx-auto flex max-w-xl flex-col items-center gap-3 text-center">
         <h2 className="font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
           Everything your farm needs, in one place

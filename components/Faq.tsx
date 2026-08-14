@@ -45,7 +45,7 @@ export default function Faq() {
   const listRef = useScrollReveal({ start: "top 92%" });
 
   return (
-    <section className="mx-auto w-full max-w-3xl px-6 py-20">
+    <section id="faq" className="mx-auto w-full max-w-3xl px-6 py-20">
       <div ref={headingRef} className="reveal mx-auto flex flex-col items-center gap-3 text-center">
         <h2 className="font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
           Frequently asked questions

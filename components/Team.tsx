@@ -3,35 +3,43 @@ import { FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const team = [
   {
-    name: "Eric Mugisha",
-    role: "Founder & CEO",
-    photo: "/img/vets/vet-1.png",
-    email: "eric@vettrack.rw",
+    name: "Dr. Theophile Niyonizeye",
+    role: "CEO & Founder",
+    photo: "/img/team/ceo.png",
+    email: "ceo@vettrack.rw",
     whatsapp: "https://wa.me/250700000001",
     instagram: "https://instagram.com/vettrack",
   },
   {
-    name: "Dr. Grace Uwase",
-    role: "Head of Veterinary Ops",
-    photo: "/img/vets/vet-1.png",
-    email: "grace@vettrack.rw",
+    name: "Dr. Benitte Ikuzwe",
+    role: "Co-founder & Managing Director",
+    photo: "/img/team/managing-dirrector.png",
+    email: "md@vettrack.rw",
     whatsapp: "https://wa.me/250700000002",
     instagram: "https://instagram.com/vettrack",
   },
   {
-    name: "Kevin Ndayisenga",
-    role: "Head of Engineering",
-    photo: "/img/vets/vet-1.png",
-    email: "kevin@vettrack.rw",
+    name: "Dr. Gerard Sano",
+    role: "Co-founder & Chief Financial Officer",
+    photo: "/img/team/finance.png",
+    email: "finance@vettrack.rw",
     whatsapp: "https://wa.me/250700000003",
     instagram: "https://instagram.com/vettrack",
   },
   {
-    name: "Aline Mukamana",
-    role: "Customer Success Lead",
-    photo: "/img/vets/vet-1.png",
-    email: "aline@vettrack.rw",
+    name: "Dr. Charline Rutagengwa",
+    role: "Co-founder & Marketing Officer",
+    photo: "/img/team/marketing.png",
+    email: "marketing@vettrack.rw",
     whatsapp: "https://wa.me/250700000004",
+    instagram: "https://instagram.com/vettrack",
+  },
+  {
+    name: "Dr. Mentor Name",
+    role: "Mentor",
+    photo: "/img/team/mentor.png",
+    email: "mentor@vettrack.rw",
+    whatsapp: "https://wa.me/250700000005",
     instagram: "https://instagram.com/vettrack",
   },
 ] as const;
@@ -43,62 +51,58 @@ export default function Team() {
         Meet the team
       </h2>
       <p className="mx-auto mt-3 max-w-xl text-center text-sm leading-6 text-ink-500">
-        The farmers, vets, and engineers building VetTrack day to day.
+        The people building VetTrack day to day.
       </p>
 
-      <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-5">
         {team.map((member) => (
           <div
-            key={member.name}
-            className="group relative aspect-[3/4] overflow-hidden rounded-t-[2rem] bg-ink-900"
+            key={member.role}
+            className="relative overflow-hidden rounded-3xl border border-brand-200"
           >
-            <Image
-              src={member.photo}
-              alt={member.name}
-              fill
-              sizes="(min-width: 1024px) 25vw, 50vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-900/20 to-transparent" />
+            <div className="relative aspect-[3/4] w-full">
+              <Image
+                src={member.photo}
+                alt={member.name}
+                fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
+                className="object-cover"
+              />
 
-            <span
-              aria-hidden="true"
-              className="pointer-events-none absolute left-1 top-1/2 origin-left -translate-y-1/2 -rotate-90 whitespace-nowrap font-display text-4xl font-bold text-white/10 sm:text-5xl"
-            >
-              TEAM
-            </span>
+              {/* bottom gradient + name/role overlay */}
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-700/90 via-brand-600/50 to-transparent px-4 pb-5 pt-20">
+                <h3 className="text-sm font-semibold text-white sm:text-base">{member.name}</h3>
+                <p className="text-xs text-white/70">{member.role}</p>
+              </div>
 
-            <div className="absolute right-3 top-3 flex flex-col gap-1.5">
-              <a
-                href={`mailto:${member.email}`}
-                aria-label={`Email ${member.name}`}
-                className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white/25"
-              >
-                <FaEnvelope className="h-3 w-3" />
-              </a>
-              <a
-                href={member.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`WhatsApp ${member.name}`}
-                className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white/25"
-              >
-                <FaWhatsapp className="h-3 w-3" />
-              </a>
-              <a
-                href={member.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Instagram for ${member.name}`}
-                className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white/25"
-              >
-                <FaInstagram className="h-3 w-3" />
-              </a>
-            </div>
-
-            <div className="absolute inset-x-0 bottom-0 p-4">
-              <h3 className="text-sm font-semibold text-white sm:text-base">{member.name}</h3>
-              <p className="text-xs text-white/70">{member.role}</p>
+              {/* social icons top-right */}
+              <div className="absolute right-3 top-3 flex flex-col gap-1.5">
+                <a
+                  href={`mailto:${member.email}`}
+                  aria-label={`Email ${member.name}`}
+                  className="flex h-7 w-7 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm transition-colors hover:bg-black/50"
+                >
+                  <FaEnvelope className="h-3 w-3" />
+                </a>
+                <a
+                  href={member.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`WhatsApp ${member.name}`}
+                  className="flex h-7 w-7 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm transition-colors hover:bg-black/50"
+                >
+                  <FaWhatsapp className="h-3 w-3" />
+                </a>
+                <a
+                  href={member.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Instagram for ${member.name}`}
+                  className="flex h-7 w-7 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm transition-colors hover:bg-black/50"
+                >
+                  <FaInstagram className="h-3 w-3" />
+                </a>
+              </div>
             </div>
           </div>
         ))}
